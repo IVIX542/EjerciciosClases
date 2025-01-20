@@ -41,6 +41,14 @@ public class Localidad {
 	
 	}
 	
+	public static int rentaPotencial(Localidad localidad1) {
+		
+		int rentaTeorica = localidad1.numHabitantes * localidad1.rentaPerCapita;
+		
+		return rentaTeorica;
+		
+	}
+	
 	//Setters
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -104,6 +112,8 @@ public class Localidad {
 		tieneMasPoblacion(localidad4);
 		
 		System.out.println(localidad2.nombre + " tiene una densidad de población de " + densidadDePoblacion(localidad2) + " hablitantes por km cuadrado.");
+		
+		System.out.println("La renta teórica posible de " + localidad2.nombre + " es de " + rentaPotencial(localidad2) + "€");
 		
 		
 	}
