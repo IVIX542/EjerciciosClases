@@ -9,6 +9,7 @@ public class Localidad {
 	private int superficie;
 	private int rentaPerCapita;
 	
+	//Constructor
 	public Localidad(String nombre, String provincia, int numHabitantes, int distanciaACapital, int superficie, int rentaPerCapita) {
 		this.nombre = nombre;
 		this.provincia = provincia;
