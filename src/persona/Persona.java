@@ -23,6 +23,32 @@ public class Persona {
 	}
 	
 	//Métodos
+	public static void esMayorQue(Persona persona2) {
+		
+		Persona persona1 = new Persona("María", "Fernández", "García", "87654321B", "Barcelona", 28);
+		
+		if(persona1.edad > persona2.edad) {
+			System.out.println(persona1.nombre + " es mayor que " + persona2.nombre);
+		} else {
+			System.out.println(persona1.nombre + " es menor que " + persona2.nombre);
+		}
+		
+	}
+	
+	public static void esTocayoDe(Persona persona2) {
+		
+		Persona persona1 = new Persona("María", "Fernández", "García", "87654321B", "Barcelona", 28);
+		
+		if(persona1.nombre.equals(persona2.nombre)) {
+			
+			System.out.println(persona1.nombre + " con " + persona1.edad + " años se llama igual que " + persona2.nombre + " con " + persona2.edad + " años.");
+			
+		} else {
+			System.out.println(persona1.nombre + " con " + persona1.edad + " años no se llama igual que " + persona2.nombre + " con " + persona2.edad + " años.");
+		}
+		
+	}
+	
 	
 	//Setters
 	public void setNombre(String nombre) {
@@ -76,11 +102,20 @@ public class Persona {
 	
 	public static void main(String[] args) {
 		
-		//Creación de objeto Persona
+		//Creación de objetos Persona
 		Persona persona1 = new Persona("Carlos", "González", "López", "12345678A", "Madrid", 35);
+		Persona persona2 = new Persona("Lucía", "Martínez", "Sánchez", "98765432C", "Valencia", 16);
+		Persona persona3 = new Persona("María", "Ruiz", "Hernández", "56473829D", "Sevilla", 22);
+		
 		
 		//Muestra de los atributos de persona1
 		System.out.println(persona1.nombre + " " + persona1.apellido1 + " " + persona1.apellido2 + ", con DNI " + persona1.dni + " vive en " + persona1.provincia + " y tiene " + persona1.edad + " años.");
+		
+		//Llamada a los métodos
+		esMayorQue(persona1);
+		esMayorQue(persona2);
+		
+		esTocayoDe(persona3);
 		
 	}
 
