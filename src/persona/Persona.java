@@ -49,6 +49,22 @@ public class Persona {
 		
 	}
 	
+	public static void esFamiliarDe(Persona persona2) {
+		
+		Persona persona1 = new Persona("María", "Fernández", "García", "87654321B", "Barcelona", 28);
+		
+		if(persona1.apellido1.equals(persona2.apellido1)) {
+			
+			System.out.println(persona1.nombre + " y " + persona2.nombre + " son de la familia " + persona1.apellido1);
+			
+		} else if(persona1.apellido2.equals(persona2.apellido2)) {
+			
+			System.out.println(persona1.nombre + " y " + persona2.nombre + " son de la familia " + persona1.apellido2);
+			
+		}
+		
+	}
+	
 	
 	//Setters
 	public void setNombre(String nombre) {
@@ -106,6 +122,8 @@ public class Persona {
 		Persona persona1 = new Persona("Carlos", "González", "López", "12345678A", "Madrid", 35);
 		Persona persona2 = new Persona("Lucía", "Martínez", "Sánchez", "98765432C", "Valencia", 16);
 		Persona persona3 = new Persona("María", "Ruiz", "Hernández", "56473829D", "Sevilla", 22);
+		Persona persona4 = new Persona("Luis", "Fernández", "Muñoz", "19283746E", "Zaragoza", 40);
+		Persona persona5 = new Persona("Sofía", "Navarro", "García", "38475629F", "Bilbao", 30);
 		
 		
 		//Muestra de los atributos de persona1
@@ -116,6 +134,9 @@ public class Persona {
 		esMayorQue(persona2);
 		
 		esTocayoDe(persona3);
+		
+		esFamiliarDe(persona4);
+		esFamiliarDe(persona5);
 		
 	}
 
