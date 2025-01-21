@@ -1,5 +1,11 @@
 package localidad;
 
+/*
+ * 
+ * @author ivanLopez
+ * 
+ * */
+
 public class Localidad {
 	
 	private String nombre;

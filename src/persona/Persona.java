@@ -1,5 +1,11 @@
 package persona;
 
+/*
+ * 
+ * @author ivanLopez
+ * 
+ * */
+
 public class Persona {
 	
 	//Atributos
